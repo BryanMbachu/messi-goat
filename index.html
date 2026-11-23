@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESSIIII</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1 class="fade-in">ONE OF THE GREATEST PLAYER TO WALK THIS EARTH!</h1>
+<p class="fade-in">A MESSI FAN WEBSITE.</p>
+<img id="carPicture" src="images/images (2).jpeg" alt="MESSI" class="messi-top" width="900" height="1000">
+<a class="fade-in" href="href="https://www.google.com/search?q=Messi+stats"">MESSI STATS</a>
+<a class="fade-in" href="https://www.google.com/search?q=ronaldo+stats&oq=ronaldo+stats&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBi0BzIHCAIQABiABDIKCAMQABiABBi0BzIMCAQQABgUGIcCGIAEMgoIBRAAGIAEGLQHMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgoICRAAGIAEGLQH0gEINDk1MmowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8">Opponent STATS</a>
+<button onclick="revealFact()">Reveal Messi Facts</button>
+
+
+<div id="messiFact" class="facts-card">
+    <h2>⚽ Messi Facts</h2>
+
+    <p>🐐 Lionel Messi is widely regarded as one of the greatest footballers ever.</p>
+
+    <p>🏆 He has won 8 Ballon d'Or awards.</p>
+
+    <p>🌍 He won the 2022 FIFA World Cup with Argentina.</p>
+</div>
+
+<img src="images/images (1).jpeg" alt="Messi" class="messi-bottom" width="900" height="1000">
+
+<section class="poll-section">
+
+    <h1>🐐 Messi OR Ronaldo 🐐</h1>
+    <p>CHOOSE YOUR GOAT!!</p>
+
+  <div class="poll-container">
+
+    <div class="player">
+        <div class="vote-picture">
+            <img src="images/messi.jpeg" alt="Lionel Messi">
+            <div class="vote-fill messi-fill" id="messiVoteFill"></div>
+        </div>
+
+        <h2>MESSI</h2>
+        <p class="percentage" id="messiPercentage">0%</p>
+        <button onclick="vote('messi')">Vote Messi</button>
+    </div>
+
+    <div class="player">
+        <div class="vote-picture">
+            <img src="images/ronaldo.jpeg" alt="Cristiano Ronaldo">
+            <div class="vote-fill ronaldo-fill" id="ronaldoVoteFill"></div>
+        </div>
+
+        <h2>RONALDO</h2>
+        <p class="percentage" id="ronaldoPercentage">0%</p>
+        <button onclick="vote('ronaldo')">Vote Ronaldo</button>
+    </div>
+
+</div>
+
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+
+</html>

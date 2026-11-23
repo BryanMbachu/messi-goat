@@ -1,0 +1,303 @@
+
+/* ===== GENERAL WEBSITE ===== */
+
+body {
+    background-color: black;
+    font-family: Verdana;
+}
+
+/* ===== HEADINGS ===== */
+
+h1 {
+    color: yellow;
+    font-family: Arial;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* ===== PARAGRAPHS ===== */
+
+p {
+    color: aliceblue;
+    font-family: Georgia;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* ===== LINKS ===== */
+
+a {
+    color: aliceblue;
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 12px 25px;
+    border: 2px solid gold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
+}
+a:hover {
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 15px gold;
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    border: 3px solid gold;
+    border-radius: 50px;
+    padding: 15px 25px;
+    margin-top: 80px;
+    margin-bottom: auto;
+    box-shadow: 5px 5px 10px gold;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== BUTTON HOVER ===== */
+
+button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* ===== FADE-IN ANIMATION ===== */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== STAGGERED ANIMATIONS ===== */
+
+h1.fade-in {
+    transition-delay: 0s;
+}
+
+p.fade-in {
+    transition-delay: 0.2s;
+}
+
+a.fade-in {
+    transition-delay: 0.4s;
+}
+
+button.fade-in {
+    transition-delay: 0.6s;
+}
+
+/* GOLDEN MESSI FACTS CARD */
+
+.facts-card {
+    background: linear-gradient(135deg, #2b2100, #806000, #d4af37);
+    color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 500px;
+    border: 2px solid gold;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: goldReveal 1s ease forwards;
+}
+
+.facts-card h2 {
+    color: gold;
+    text-align: center;
+}
+
+.facts-card p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.facts-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px gold;
+}
+
+@keyframes goldReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.messi-bottom {
+    display: block;
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+    margin: 30px auto;
+    border: 2px solid gold;
+    border-radius: 15px;
+    box-shadow: 0 0 20px gold;
+}
+.messi-top {
+    display: block;
+    width: 900px;
+    max-width: 90%;
+    height: auto;
+    margin: 30px auto;
+    border: 2px solid gold;
+    border-radius: 15px;
+    box-shadow: 0 0 20px gold;
+}
+
+/* MESSI VS RONALDO POLL */
+
+.poll-section {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.poll-section h1 {
+    font-size: 35px;
+    color: gold;
+}
+
+.poll-section > p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.poll-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.player {
+    width: 280px;
+    position: relative;
+}
+
+.player img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.player h2 {
+    font-size: 25px;
+    margin: 15px 0 5px;
+}
+
+.player button {
+    background: gold;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.player button:hover {
+    transform: scale(1.05);
+}
+
+/* VOTING PERCENTAGE FILL */
+
+.player {
+    position: relative;
+    overflow: hidden;
+}
+
+.player img {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.player:nth-child(2) img {
+    object-position: center 30%;
+}
+
+/* PLAYER PERCENTAGES */
+
+.percentage {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: gold;
+}
+
+.player:nth-child(2) .percentage {
+    color: #3399ff;
+}
+/* ===== VOTING VISUAL BARS ===== */
+
+.vote-picture {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.vote-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.vote-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: height 1.2s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.messi-fill {
+    background: rgba(0, 170, 255, 0.45);
+}
+
+.ronaldo-fill {
+    background: rgba(255, 60, 60, 0.45);
+}
