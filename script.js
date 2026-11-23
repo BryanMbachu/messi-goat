@@ -94,7 +94,7 @@ async function updatePoll() {
     votes.ronaldo = data.filter(v => v.player === 'ronaldo').length;
 
     const totalVotes = votes.messi + votes.ronaldo;
-
+document.getElementById("totalVotes").textContent = "Total Votes: " + totalVotes;
     const messiPercent = totalVotes === 0
         ? 0
         : Math.round((votes.messi / totalVotes) * 100);
